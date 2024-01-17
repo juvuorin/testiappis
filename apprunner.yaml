@@ -4,6 +4,7 @@ build:
   commands:    
     build:
       - npm install --production
-      - cd my-app && npm install && npm run-script build                                  
+      - cd my-app && npm install && npm run-script build
+      - aws s3 cp my-app/build/ s3://ideaalibucket/ --recursive                                  
 run:                              
   command: node index.js
