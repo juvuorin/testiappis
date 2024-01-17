@@ -4,9 +4,6 @@ build:
   commands:    
     build:
       - npm install --production
-      - cd my-app
-      - npm install
-      - cd my-app
-      - npm run-script build                                 
+      - cd my-app && npm install && npm run-script build                                  
 run:                              
   command: node index.js
