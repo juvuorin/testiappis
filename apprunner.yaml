@@ -34,9 +34,10 @@ phases:
   build:
     commands:
        - npm install
+       - cd my-app
        - npm run-script build
-       - ls
-       - aws s3 cp build/ s3://examhost.cloud/ --recursive
+      # - ls
+      # - aws s3 cp build/ s3://examhost.cloud/ --recursive
       # - command
   #post_build:
     #commands:
