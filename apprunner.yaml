@@ -3,6 +3,8 @@ runtime: nodejs18
 build:
   commands:    
     build:
-      - npm install --production                                  
+      - npm install --production
+      - cd my-app
+      - npm install                                 
 run:                              
   command: node index.js
