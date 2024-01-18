@@ -18,7 +18,9 @@
     "url": "https://github.com/juvuorin/testiappis/issues"
   },
   "homepage": "https://github.com/juvuorin/testiappis#readme",
+
   "dependencies": {
-    "create-react-app": "^5.0.1"
-  }
+    "cors": "^2.8.4",
+    "express": "^4.16.3"   }
+
 }
